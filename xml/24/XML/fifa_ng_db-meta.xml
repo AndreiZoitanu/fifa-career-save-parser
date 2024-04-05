@@ -586,7 +586,7 @@
       <field name="isonline" shortname="RxIJ" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="ssfstoreitemlink" shortname="FiXQ" maxupdate="-1" maxinsert="200" maxdelete="200" savegroups="squads">
+  <table name="ssfstoreitemlink" shortname="FiXQ" maxupdate="-1" maxinsert="91" maxdelete="91" savegroups="squads">
     <fields>
       <field name="itemid" shortname="TsLM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" key="True" />
       <field name="assettype" shortname="jmFE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="0" update="True" />
@@ -614,7 +614,7 @@
       <field name="squadtype" shortname="DQkg" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="footwear" shortname="IePu" maxupdate="-1" maxinsert="48" maxdelete="48" savegroups="squads">
+  <table name="footwear" shortname="IePu" maxupdate="-1" maxinsert="39" maxdelete="39" savegroups="squads">
     <fields>
       <field name="shoeid" shortname="hzFG" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" key="True" />
       <field name="clothingtype" shortname="yPLv" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="16" rangelow="0" />
@@ -1564,7 +1564,7 @@
       <field name="ccpassing" shortname="Oops" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
     </fields>
   </table>
-  <table name="outfitarrangements" shortname="Zeam" maxupdate="-1" maxinsert="902" maxdelete="902" savegroups="cmsquads,squads">
+  <table name="outfitarrangements" shortname="Zeam" maxupdate="-1" maxinsert="898" maxdelete="898" savegroups="cmsquads,squads">
     <fields>
       <field name="outfitid" shortname="CRrt" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="0" update="True" key="True" />
       <field name="accessorytypethree" shortname="dtyB" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
@@ -3614,7 +3614,7 @@
       <field name="netpatternid" shortname="MxYU" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="0" />
     </fields>
   </table>
-  <table name="outfithairlinks" shortname="QqjW" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="squads">
+  <table name="outfithairlinks" shortname="QqjW" maxupdate="-1" maxinsert="49" maxdelete="49" savegroups="squads">
     <fields>
       <field name="outfitid" shortname="CRrt" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="0" update="True" key="True" />
       <field name="hairtypecode" shortname="CkYD" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2047" rangelow="0" update="True" />
@@ -3649,7 +3649,7 @@
       <field name="ishub" shortname="rWZf" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
     </fields>
   </table>
-  <table name="accessories" shortname="RMfq" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="squads">
+  <table name="accessories" shortname="RMfq" maxupdate="-1" maxinsert="46" maxdelete="46" savegroups="squads">
     <fields>
       <field name="accessoryid" shortname="KYeV" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" update="True" key="True" />
       <field name="clothingtype" shortname="yPLv" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="16" rangelow="0" update="True" />
@@ -3969,14 +3969,14 @@
       <field name="facialhaircolorcode" shortname="mIlz" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="0" />
       <field name="sideburnscode" shortname="mrAn" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" />
       <field name="faceposerpreset" shortname="qwYd" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="15" rangelow="0" />
-      <field name="hairtypecode" shortname="CkYD" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1023" rangelow="0" />
+      <field name="hairtypecode" shortname="CkYD" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2047" rangelow="0" />
       <field name="gender" shortname="EveZ" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
       <field name="eyecolorcode" shortname="Zufj" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="16" rangelow="1" />
       <field name="facialhairtypecode" shortname="onGA" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="19" rangelow="0" />
       <field name="height" shortname="ypBQ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="215" rangelow="130" />
       <field name="eyebrowcode" shortname="HqUh" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="15" rangelow="0" />
       <field name="seasonaloutfit" shortname="nxLk" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="0" />
-      <field name="seasonalhair" shortname="qLXP" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1023" rangelow="0" />
+      <field name="seasonalhair" shortname="qLXP" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2047" rangelow="0" />
       <field name="slctype" shortname="ERwL" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" />
       <field name="headassetid" shortname="GEba" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" />
       <field name="headtypecode" shortname="OoQO" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="16000" rangelow="0" />
@@ -4588,7 +4588,7 @@
       <field name="teamid2" shortname="afAW" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" />
     </fields>
   </table>
-  <table name="audiostadium" shortname="Jpfv" maxinsert="64" maxdelete="64">
+  <table name="audiostadium" shortname="Jpfv" maxinsert="63" maxdelete="63">
     <fields>
       <field name="stadiumid" shortname="fwCQ" type="DBOFIELDTYPE_INTEGER" depth="13" null="False" rangehigh="6000" rangelow="0" key="True" />
       <field name="stadiumpalanguageindex" shortname="yHUH" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="31" rangelow="-1" />
