@@ -37,7 +37,7 @@ module.exports = (fs, xml2js, BufferReader) => {
         },
     
         readDb: async (binaryData, fifaVersion) => {
-            let xmlFile = await fs.readFile(path.join(__dirname, `/../xml/${fifaVersion}/XML/fifa_ng_db-meta.xml`));
+            let xmlFile = await fs.readFile(path.join(__dirname, `/../xml/${fifaVersion}/fifa_ng_db-meta.xml`));
             let xmlData = await xml2js.parseStringPromise(xmlFile);
             let parsedXmlData = helpers.parseXmlDb(xmlData);
     
