@@ -146,7 +146,7 @@
       <field name="playerrequest" shortname="maEj" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" update="True" />
       <field name="numloanrequests" shortname="vubk" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="0" update="True" />
       <field name="lastwithdrawdate" shortname="wxoJ" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="20601231" rangelow="20080101" update="True" />
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" update="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" update="True" />
       <field name="numtransferrequests" shortname="YumR" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="0" update="True" />
       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="33" rangelow="-1" update="True" />
     </fields>
@@ -396,7 +396,7 @@
   </table>
   <table name="career_playerlastgrowth" shortname="fvtG" maxupdate="-1" maxinsert="26000" maxdelete="26000" savegroups="careermode">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="injuryduration" shortname="jZjq" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" update="True" />
       <field name="injurydate" shortname="mrDQ" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="41600" rangelow="0" update="True" />
       <field name="growthdate" shortname="moUA" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="41600" rangelow="0" update="True" />
@@ -1055,7 +1055,7 @@
       <field name="ballremapid" shortname="DcmT" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="500" rangelow="0" />
     </fields>
   </table>
-  <table name="previousteam" shortname="rIsB" maxupdate="-1" maxinsert="25777" maxdelete="25777" savegroups="cmsquads,squads">
+  <table name="previousteam" shortname="rIsB" maxupdate="-1" maxinsert="25785" maxdelete="25785" savegroups="cmsquads,squads">
     <fields>
       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" fkparenttable="players" />
       <field name="previousteamid" shortname="wDHM" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" fkparenttable="teams" />
@@ -1082,7 +1082,7 @@
       <field name="halstring" shortname="mEmD" type="DBOFIELDTYPE_STRING" depth="2048" null="False" rangehigh="0" rangelow="0" />
     </fields>
   </table>
-  <table name="leaguerefereelinks" shortname="tfLS" maxinsert="65" maxdelete="65" savegroups="squads">
+  <table name="leaguerefereelinks" shortname="tfLS" maxinsert="198" maxdelete="198" savegroups="squads">
     <fields>
       <field name="leagueid" shortname="aQrQ" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="4000" rangelow="1" key="True" fkparenttable="leagues" />
       <field name="refereeid" shortname="Lfmt" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" fkparenttable="referee" />
@@ -1631,7 +1631,7 @@
       <field name="squadtype" shortname="DQkg" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="footwear" shortname="IePu" maxupdate="-1" maxinsert="145" maxdelete="145" savegroups="squads">
+  <table name="footwear" shortname="IePu" maxupdate="-1" maxinsert="118" maxdelete="118" savegroups="squads">
     <fields>
       <field name="shoeid" shortname="hzFG" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" key="True" />
       <field name="clothingtype" shortname="yPLv" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="16" rangelow="0" />
@@ -1882,7 +1882,7 @@
       <field name="mu_platysma_NR_SLX_D" shortname="UmXS" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="127" rangelow="-127" />
     </fields>
   </table>
-  <table name="rivals" shortname="LbKk" maxupdate="-1" maxinsert="560" maxdelete="560" savegroups="cmsquads,squads">
+  <table name="rivals" shortname="LbKk" maxupdate="-1" maxinsert="545" maxdelete="545" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid1" shortname="fmFo" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
       <field name="teamid2" shortname="afAW" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" fkparenttable="teams" />
@@ -1922,7 +1922,7 @@
       <field name="halstring" shortname="mEmD" type="DBOFIELDTYPE_STRING" depth="2048" null="False" rangehigh="0" rangelow="0" />
     </fields>
   </table>
-  <table name="teamformdiff" shortname="OIcD" maxupdate="-1" maxinsert="12" maxdelete="12" savegroups="cmsquads,squads">
+  <table name="teamformdiff" shortname="OIcD" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
       <field name="oldmidfieldrating" shortname="YxAQ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
@@ -2034,7 +2034,7 @@
       <field name="modetypestr" shortname="XuPr" type="DBOFIELDTYPE_STRING" depth="512" null="False" rangehigh="0" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="vanitystoreitemlink" shortname="SizI" maxupdate="-1" maxinsert="565" maxdelete="565" savegroups="squads">
+  <table name="vanitystoreitemlink" shortname="SizI" maxupdate="-1" maxinsert="484" maxdelete="484" savegroups="squads">
     <fields>
       <field name="itemid" shortname="TsLM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" key="True" />
       <field name="assettype" shortname="jmFE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="0" update="True" />
@@ -2050,7 +2050,7 @@
       <field name="kittype" shortname="eRor" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="competitionballs" shortname="SWFH" maxupdate="-1" maxinsert="205" maxdelete="205" savegroups="squads">
+  <table name="competitionballs" shortname="SWFH" maxupdate="-1" maxinsert="203" maxdelete="203" savegroups="squads">
     <fields>
       <field name="competitionid" shortname="LhXN" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
       <field name="ballid" shortname="pxes" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="500" rangelow="0" />
@@ -2125,9 +2125,9 @@
   </table>
   <table name="playerperks" shortname="YNjB" maxupdate="255" maxinsert="255" maxdelete="255">
     <fields>
-      <field name="playerperks_artificialkey" shortname="OMYv" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerperks_artificialkey" shortname="OMYv" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="perk_2" shortname="BWwv" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" update="True" />
-      <field name="playerperks_playerid" shortname="bBKF" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="playerperks_playerid" shortname="bBKF" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="perk_0" shortname="fMRf" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" update="True" />
       <field name="perk_1" shortname="gPBt" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" update="True" />
     </fields>
@@ -2145,7 +2145,7 @@
       <field name="outfitid" shortname="CRrt" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="sponsors" shortname="fGwQ" maxupdate="-1" maxinsert="1197" maxdelete="1197" savegroups="squads">
+  <table name="sponsors" shortname="fGwQ" maxupdate="-1" maxinsert="1170" maxdelete="1170" savegroups="squads">
     <fields>
       <field name="adsponserid" shortname="Laxd" type="DBOFIELDTYPE_INTEGER" depth="13" null="False" rangehigh="8191" rangelow="0" update="True" key="True" />
       <field name="isea" shortname="eZzy" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
@@ -2155,7 +2155,7 @@
       <field name="isfut" shortname="FEJQ" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="competitionseeds" shortname="fMpR" maxupdate="-1" maxinsert="74" maxdelete="74" savegroups="squads">
+  <table name="competitionseeds" shortname="fMpR" maxupdate="-1" maxinsert="62" maxdelete="62" savegroups="squads">
     <fields>
       <field name="competitionid" shortname="LhXN" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" />
@@ -2167,7 +2167,7 @@
   <table name="teamsheetanalysis" shortname="fqec">
     <fields>
       <field name="positionrecorded" shortname="WAct" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="27" rangelow="0" />
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" />
     </fields>
   </table>
   <table name="clubcoefficients" shortname="fggG" maxupdate="-1" maxinsert="1844" maxdelete="1844" savegroups="cmsquads">
@@ -2737,7 +2737,7 @@
       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="position7" shortname="fvcy" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="pos3role" shortname="kFjd" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="60000" rangelow="0" update="True" />
-      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" />
+      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" update="True" />
       <field name="midfielders" shortname="yYmh" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offset8y" shortname="MhRc" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offensiverating" shortname="QraJ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
@@ -3094,7 +3094,7 @@
       <field name="tattoohead" shortname="BhwR" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
     </fields>
   </table>
-  <table name="competitionsponsorlinks" shortname="AqBt" maxupdate="-1" maxinsert="2350" maxdelete="2350" savegroups="squads">
+  <table name="competitionsponsorlinks" shortname="AqBt" maxupdate="-1" maxinsert="2340" maxdelete="2340" savegroups="squads">
     <fields>
       <field name="artificialkey" shortname="JMld" type="DBOFIELDTYPE_INTEGER" depth="13" null="False" rangehigh="8191" rangelow="0" update="True" key="True" />
       <field name="competitionid" shortname="LhXN" type="DBOFIELDTYPE_INTEGER" depth="13" null="False" rangehigh="4096" rangelow="-1" update="True" />
@@ -3137,7 +3137,7 @@
       <field name="crowdregion" shortname="Edjp" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="9" rangelow="0" />
     </fields>
   </table>
-  <table name="competition" shortname="FMpz" maxupdate="-1" maxinsert="332" maxdelete="332" savegroups="cmsquads,squads">
+  <table name="competition" shortname="FMpz" maxupdate="-1" maxinsert="331" maxdelete="331" savegroups="cmsquads,squads">
     <fields>
       <field name="competitionid" shortname="LhXN" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
       <field name="finalstadium" shortname="boxi" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" />
@@ -3491,7 +3491,7 @@
       <field name="enabled" shortname="IaYq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="teamcounterparts" shortname="ImNE" maxupdate="-1" maxinsert="51" maxdelete="51" savegroups="cmsquads,squads">
+  <table name="teamcounterparts" shortname="ImNE" maxupdate="-1" maxinsert="44" maxdelete="44" savegroups="cmsquads,squads">
     <fields>
       <field name="maleteamid" shortname="QmlU" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
       <field name="maleteamname" shortname="ppxQ" type="DBOFIELDTYPE_STRING" depth="480" null="False" rangehigh="0" rangelow="0" update="True" />
@@ -3499,7 +3499,7 @@
       <field name="femaleteamid" shortname="Ibup" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" />
     </fields>
   </table>
-  <table name="manager" shortname="Knen" maxupdate="-1" maxinsert="496" maxdelete="496" savegroups="cmsquads,squads">
+  <table name="manager" shortname="Knen" maxupdate="-1" maxinsert="493" maxdelete="493" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" update="True" key="True" />
       <field name="accessorycolourcode4" shortname="cAUq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" update="True" />
@@ -3699,7 +3699,7 @@
       <field name="tod2weather" shortname="KZWm" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="ucc" shortname="QMqB" maxupdate="-1" maxinsert="914" maxdelete="914" savegroups="cmsquads,squads">
+  <table name="ucc" shortname="QMqB" maxupdate="-1" maxinsert="978" maxdelete="978" savegroups="cmsquads,squads">
     <fields>
       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="probability" shortname="eQzB" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
@@ -3716,12 +3716,12 @@
   </table>
   <table name="career_youthplayerhistory" shortname="TcEm" maxupdate="-1" maxinsert="64" maxdelete="64" savegroups="careermode">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="appearances" shortname="nVWT" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="127" rangelow="0" update="True" />
       <field name="goals" shortname="MERA" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="playerformdiff" shortname="UlaA" maxupdate="-1" savegroups="cmsquads,squads">
+  <table name="playerformdiff" shortname="UlaA" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
       <field name="newoverallrating" shortname="xKVG" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" />
@@ -4007,7 +4007,7 @@
       <field name="countrycode" shortname="xciN" type="DBOFIELDTYPE_STRING" depth="160" null="False" rangehigh="0" rangelow="0" />
     </fields>
   </table>
-  <table name="competitionkits" shortname="brHl" maxupdate="-1" maxinsert="1024" maxdelete="1024" savegroups="squads">
+  <table name="competitionkits" shortname="brHl" maxupdate="-1" maxinsert="1052" maxdelete="1052" savegroups="squads">
     <fields>
       <field name="teamtechid" shortname="qljg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" key="True" />
       <field name="jerseynumbercolorterg" shortname="bLBP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
@@ -4133,7 +4133,7 @@
       <field name="offeredcontracttype" shortname="nrPh" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="7" rangelow="0" update="True" />
       <field name="isexchangedplayer" shortname="Jhti" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
       <field name="signonbonus" shortname="Synf" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2147483520" rangelow="-1" update="True" />
-      <field name="secondaryplayerid" shortname="bptr" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" update="True" />
+      <field name="secondaryplayerid" shortname="bptr" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" update="True" />
       <field name="performancebonuscount" shortname="AinI" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="-1" update="True" />
       <field name="signeddate" shortname="KhTp" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="20601231" rangelow="20080101" update="True" />
       <field name="iscomingthisseason" shortname="aebA" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
@@ -4416,7 +4416,7 @@
       <field name="mu_platysma_NR_SLX_D" shortname="UmXS" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="127" rangelow="-127" />
     </fields>
   </table>
-  <table name="referee" shortname="mMQM" maxinsert="61" maxdelete="61" savegroups="squads">
+  <table name="referee" shortname="mMQM" maxinsert="142" maxdelete="142" savegroups="squads">
     <fields>
       <field name="refereeid" shortname="Lfmt" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" key="True" />
       <field name="skinsurfacepack" shortname="eyGK" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="299999" rangelow="100000" />
@@ -4486,7 +4486,7 @@
   </table>
   <table name="bannerplayers" shortname="nhky" maxupdate="-1" maxinsert="965" maxdelete="1000" savegroups="squads">
     <fields>
-      <field name="playertechid" shortname="gDDc" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-2" update="True" key="True" />
+      <field name="playertechid" shortname="gDDc" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-2" update="True" key="True" />
       <field name="teamtechid" shortname="qljg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" update="True" />
       <field name="legend" shortname="FCfB" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
       <field name="isnew" shortname="MQrn" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
@@ -4506,7 +4506,7 @@
       <field name="artificialkey" shortname="JMld" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" key="True" />
       <field name="matchrating" shortname="kRUB" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="12700" rangelow="0" update="True" />
       <field name="weekswon" shortname="hmLg" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="0" update="True" />
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="month" shortname="JKLp" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="12" rangelow="1" update="True" />
     </fields>
   </table>
@@ -4521,7 +4521,7 @@
   </table>
   <table name="tifo" shortname="tWYe">
     <fields>
-      <field name="id" shortname="CkjP" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="-1" key="True" />
+      <field name="id" shortname="CkjP" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="1200" rangelow="-1" key="True" />
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" />
       <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="520" null="False" rangehigh="0" rangelow="0" />
       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" />
@@ -4700,7 +4700,7 @@
       <field name="country" shortname="HMyc" type="DBOFIELDTYPE_STRING" depth="24" null="False" rangehigh="0" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="players" shortname="CZUM" maxupdate="-1" maxinsert="5492" maxdelete="5492" savegroups="cmsquads,squads,players">
+  <table name="players" shortname="CZUM" maxupdate="-1" maxinsert="6251" maxdelete="6251" savegroups="cmsquads,squads,players">
     <fields>
       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="weakfootabilitytypecode" shortname="aOBn" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="1" update="True" />
@@ -4850,7 +4850,7 @@
   </table>
   <table name="career_playergrowthuserseason" shortname="DyYs" maxupdate="-1" maxinsert="100" maxdelete="100" savegroups="careermode">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="gkkicking" shortname="kqda" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
       <field name="dribbling" shortname="nEbM" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
       <field name="shotpower" shortname="ohpV" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
@@ -5091,7 +5091,7 @@
   </table>
   <table name="career_youthplayers" shortname="IOmq" maxupdate="-1" maxinsert="16" maxdelete="16" savegroups="careermode">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="monthsinsquad" shortname="Otjv" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="48" rangelow="0" update="True" />
       <field name="playertype" shortname="GzsD" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="7" rangelow="0" update="True" />
       <field name="potentialvariance" shortname="Ihti" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="0" update="True" />
@@ -5271,7 +5271,7 @@
       <field name="compobjid" shortname="OvfW" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="competitionbadges" shortname="Qxjv" maxupdate="-1" maxinsert="705" maxdelete="705" savegroups="squads">
+  <table name="competitionbadges" shortname="Qxjv" maxupdate="-1" maxinsert="745" maxdelete="745" savegroups="squads">
     <fields>
       <field name="competitionid" shortname="LhXN" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
       <field name="target" shortname="hHvj" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="15" rangelow="0" />
@@ -5550,7 +5550,7 @@
       <field name="cpmorphcomposite_cheekplacement_position_lsy" shortname="emxF" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_lipstyle_corners_updown_lsy" shortname="hEdk" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_jaw_bulk_rsx" shortname="nsEm" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
-      <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="cpattributename_eye_colour" shortname="qkPm" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
       <field name="cpmorphcomposite_dimpledarkness_lsx" shortname="AQff" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_eyedetail2_protrusion_rsy" shortname="ChOg" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
@@ -5598,7 +5598,7 @@
       <field name="cpmorphcomposite_cheekstyle_blemishes_rsx" shortname="qcnI" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorhpcomposite_chin_width_lsx" shortname="spkY" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_mouthposition_bite_rsy" shortname="yJgI" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
-      <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="cpmorphcomposite_browshape_thickness_rsy" shortname="Ksvu" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_eyedetail2_upperlid_lsy" shortname="NRSq" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="cpmorphcomposite_browplacement_tilt_lsx" shortname="OBRu" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
@@ -5620,12 +5620,12 @@
   </table>
   <table name="cz_players" shortname="YOKt" maxupdate="-1" maxinsert="1500" maxdelete="1500" savegroups="squads">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
       <field name="commentaryid" shortname="RkEp" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="-1" update="True" />
     </fields>
   </table>
-  <table name="playerloans" shortname="ZrAO" maxupdate="-1" maxinsert="1165" maxdelete="1165" savegroups="cmsquads,squads">
+  <table name="playerloans" shortname="ZrAO" maxupdate="-1" maxinsert="1407" maxdelete="1407" savegroups="cmsquads,squads">
     <fields>
       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" fkparenttable="players" />
       <field name="teamidloanedfrom" shortname="GlCc" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" fkparenttable="teams" />
@@ -5680,11 +5680,11 @@
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" />
       <field name="typeid" shortname="Bwgx" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="30" rangelow="0" update="True" />
       <field name="season" shortname="vojK" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="count" shortname="ytjZ" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="720" rangelow="1" update="True" />
     </fields>
   </table>
-  <table name="playerboots" shortname="cQNG" maxupdate="-1" maxinsert="351" maxdelete="351" savegroups="assets">
+  <table name="playerboots" shortname="cQNG" maxupdate="-1" maxinsert="201" maxdelete="201" savegroups="assets">
     <fields>
       <field name="shoetype" shortname="LRPg" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="0" key="True" />
       <field name="isembargoed" shortname="nokh" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
@@ -5788,7 +5788,7 @@
       <field name="id" shortname="CkjP" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2147483520" rangelow="0" key="True" />
       <field name="eventid" shortname="CBIo" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="0" update="True" />
       <field name="eventdate" shortname="GHrs" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2147483520" rangelow="-1" update="True" />
-      <field name="player1id" shortname="rWzy" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" update="True" />
+      <field name="player1id" shortname="rWzy" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" update="True" />
       <field name="miscvalue" shortname="sVlx" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
       <field name="team1id" shortname="TmFq" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" update="True" />
       <field name="team2id" shortname="VwfD" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" update="True" />
@@ -6032,7 +6032,7 @@
       <field name="bs_incisor_NL_XLX_D_U" shortname="UAQc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="127" rangelow="-127" />
     </fields>
   </table>
-  <table name="teamstadiumlinks" shortname="kISL" maxupdate="-1" maxinsert="1191" maxdelete="1191" savegroups="cmsquads,squads">
+  <table name="teamstadiumlinks" shortname="kISL" maxupdate="-1" maxinsert="1188" maxdelete="1188" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" key="True" fkparenttable="teams" />
       <field name="swapcrowdplacement" shortname="GdYI" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
@@ -6050,7 +6050,7 @@
       <field name="commentaryTeam" shortname="EQlZ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" />
     </fields>
   </table>
-  <table name="teams" shortname="lyxL" maxupdate="-1" maxinsert="1196" maxdelete="1196" savegroups="cmsquads,squads,onlsquads">
+  <table name="teams" shortname="lyxL" maxupdate="-1" maxinsert="1193" maxdelete="1193" savegroups="cmsquads,squads,onlsquads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
       <field name="stadiummowpattern_code" shortname="dUTO" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="17" rangelow="0" update="True" />
@@ -6155,13 +6155,13 @@
       <field name="presassettwo" shortname="UjYK" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="formations" shortname="mDGw" maxupdate="-1" maxinsert="1162" maxdelete="1162" savegroups="cmsquads,squads">
+  <table name="formations" shortname="mDGw" maxupdate="-1" maxinsert="1159" maxdelete="1159" savegroups="cmsquads,squads">
     <fields>
       <field name="formationid" shortname="oHkj" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" key="True" />
       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="position7" shortname="fvcy" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="pos3role" shortname="kFjd" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="60000" rangelow="0" update="True" />
-      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" />
+      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" update="True" />
       <field name="midfielders" shortname="yYmh" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offset8y" shortname="MhRc" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offensiverating" shortname="QraJ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
@@ -6231,7 +6231,7 @@
   </table>
   <table name="career_growthcurveinfo" shortname="ouEe" maxupdate="-1" maxinsert="350" maxdelete="350" savegroups="careermode">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
       <field name="skillcurveid" shortname="fPzx" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" update="True" />
       <field name="physicalcurveoffset" shortname="iSIR" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="3" rangelow="-3" update="True" />
       <field name="mentalcurveid" shortname="kbrR" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" update="True" />
@@ -6257,7 +6257,7 @@
       <field name="leaguename" shortname="HEQX" type="DBOFIELDTYPE_STRING" depth="960" null="False" rangehigh="0" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="competitionuefasponsors" shortname="qmil" maxupdate="-1" maxinsert="1800" maxdelete="1800" savegroups="squads">
+  <table name="competitionuefasponsors" shortname="qmil" maxupdate="-1" maxinsert="2000" maxdelete="2000" savegroups="squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
       <field name="leftbadgeid" shortname="oQnh" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" />
@@ -6505,15 +6505,15 @@
   <table name="factory_teams" shortname="xIfB">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
-      <field name="penaltytakerid" shortname="hPku" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="penaltytakerid" shortname="hPku" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="busbuildupspeed" shortname="uTrq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
-      <field name="captainid" shortname="FVzk" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="captainid" shortname="FVzk" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="cccrossing" shortname="GQty" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
       <field name="longitude" shortname="NQXQ" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="180" rangelow="-180" update="True" />
-      <field name="longkicktakerid" shortname="WiRV" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="longkicktakerid" shortname="WiRV" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="buspositioning" shortname="Yfep" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
       <field name="form" shortname="rLZx" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" update="True" />
-      <field name="leftcornerkicktakerid" shortname="xcde" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="leftcornerkicktakerid" shortname="xcde" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="numtransfersin" shortname="Gjri" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
       <field name="personalityid" shortname="IIKl" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="2" rangelow="0" update="True" />
       <field name="stafftracksuitcolorcode" shortname="IJOq" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
@@ -6532,7 +6532,7 @@
       <field name="teamcolor3b" shortname="Gzty" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="ccpositioning" shortname="IuVq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
       <field name="teamcolor2r" shortname="KzYP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
-      <field name="freekicktakerid" shortname="LfBw" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="freekicktakerid" shortname="LfBw" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="teamcolor2b" shortname="PcIL" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="fancrowdhairskintexturecode" shortname="TXjg" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="0" update="True" />
       <field name="teamcolor3r" shortname="Tsda" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
@@ -6554,7 +6554,7 @@
       <field name="defmentality" shortname="XVlA" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
       <field name="bodytypeid" shortname="ZyrV" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="2" rangelow="0" update="True" />
       <field name="defenserating" shortname="btsS" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
-      <field name="rightcornerkicktakerid" shortname="fBiX" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" />
+      <field name="rightcornerkicktakerid" shortname="fBiX" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="1" update="True" />
       <field name="defaggression" shortname="hKob" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
       <field name="teamcolor2g" shortname="rags" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="latitude" shortname="sjQg" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="90" rangelow="-90" update="True" />
@@ -6747,7 +6747,7 @@
       <field name="europe_cup_result" shortname="VnHz" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="-1" update="True" />
     </fields>
   </table>
-  <table name="default_teamsheets" shortname="AGmV" maxupdate="-1" maxinsert="1191" maxdelete="1191" savegroups="cmsquads,squads">
+  <table name="default_teamsheets" shortname="AGmV" maxupdate="-1" maxinsert="1188" maxdelete="1188" savegroups="cmsquads,squads">
     <fields>
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
       <field name="customsub1in" shortname="aNgZ" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" update="True" />
@@ -7280,7 +7280,7 @@
       <field name="transferwindowend1" shortname="PpdA" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="1231" rangelow="101" update="True" />
     </fields>
   </table>
-  <table name="teamkits" shortname="GdtI" maxupdate="-1" maxinsert="1686" maxdelete="1686" savegroups="squads">
+  <table name="teamkits" shortname="GdtI" maxupdate="-1" maxinsert="1546" maxdelete="1546" savegroups="squads">
     <fields>
       <field name="teamtechid" shortname="qljg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" key="True" />
       <field name="jerseynumbercolorterg" shortname="bLBP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
@@ -7345,7 +7345,7 @@
       <field name="shortsnumbercolorterg" shortname="zJKo" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="teamcolortertg" shortname="zyzx" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="jerseyleftsleevebadge" shortname="BKca" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" update="True" />
-      <field name="teamkitid" shortname="DPYU" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="16383" rangelow="0" />
+      <field name="teamkitid" shortname="DPYU" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="50000" rangelow="0" />
       <field name="jerseybacknamefontcase" shortname="LZNA" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="2" rangelow="0" update="True" />
       <field name="jerseynameoutlinecolorb" shortname="Rjqb" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
       <field name="jerseyrightsleevebadge" shortname="SwCX" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" update="True" />
@@ -7637,7 +7637,7 @@
       <field name="bs_incisor_NL_XLX_D_U" shortname="UAQc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="127" rangelow="-127" update="True" />
     </fields>
   </table>
-  <table name="teamplayerlinks" shortname="RrqT" maxupdate="-1" maxinsert="4390" maxdelete="4390" savegroups="cmsquads,squads,onlsquads">
+  <table name="teamplayerlinks" shortname="RrqT" maxupdate="-1" maxinsert="5146" maxdelete="5146" savegroups="cmsquads,squads,onlsquads">
     <fields>
       <field name="artificialkey" shortname="JMld" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" fkparenttable="teams" />
@@ -7675,13 +7675,13 @@
   </table>
   <table name="createplayer" shortname="SPTx" maxupdate="80" maxinsert="80" maxdelete="80" savegroups="cmsquads,squads">
     <fields>
-      <field name="create_artificialkey" shortname="RzAo" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
-      <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="create_artificialkey" shortname="RzAo" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" />
+      <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
       <field name="celebrationid" shortname="IiYd" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="15" rangelow="0" update="True" />
       <field name="skincolor" shortname="KTDQ" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-1" update="True" />
       <field name="commentaryid" shortname="RkEp" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="-1" update="True" />
       <field name="personaid" shortname="rrra" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-1" update="True" />
-      <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" update="True" />
     </fields>
   </table>
   <table name="career_playerlastmatchhistory" shortname="TPOP" maxupdate="-1" maxinsert="10000" maxdelete="10000" savegroups="careermode">
@@ -7695,7 +7695,7 @@
       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="-1" update="True" />
     </fields>
   </table>
-  <table name="teamballs" shortname="TWRE" maxupdate="-1" maxinsert="164" maxdelete="164" savegroups="assets">
+  <table name="teamballs" shortname="TWRE" maxupdate="-1" maxinsert="156" maxdelete="156" savegroups="assets">
     <fields>
       <field name="ballid" shortname="pxes" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="500" rangelow="0" key="True" />
       <field name="isembargoed" shortname="nokh" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
@@ -7720,7 +7720,7 @@
       <field name="substorytype" shortname="FPUp" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="63" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="brandtypes" shortname="VZEn" maxupdate="-1" maxinsert="92" maxdelete="92" savegroups="squads">
+  <table name="brandtypes" shortname="VZEn" maxupdate="-1" maxinsert="91" maxdelete="91" savegroups="squads">
     <fields>
       <field name="type" shortname="ZpXz" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="12" rangelow="0" key="True" />
       <field name="height" shortname="ypBQ" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="0" />
@@ -7730,7 +7730,7 @@
   </table>
   <table name="playernamemap" shortname="VGQZ">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" key="True" />
       <field name="commentaryid" shortname="RkEp" type="DBOFIELDTYPE_INTEGER" depth="20" null="False" rangehigh="1000000" rangelow="-1" />
     </fields>
   </table>
@@ -7746,7 +7746,7 @@
   </table>
   <table name="playervoicemap" shortname="WvnN" maxinsert="100" maxdelete="100" savegroups="worldtour">
     <fields>
-      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" key="True" />
+      <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="-1" key="True" />
       <field name="voiceid" shortname="qsVX" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" />
       <field name="ispredefined" shortname="OcRb" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
       <field name="singlevoice" shortname="Gufc" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
@@ -8170,7 +8170,7 @@
       <field name="ca_noseAla_NL_ICX_D_U" shortname="Vnmq" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="127" rangelow="-127" update="True" />
     </fields>
   </table>
-  <table name="goalkeepergloves" shortname="ezDT" maxupdate="-1" maxinsert="29" maxdelete="29" savegroups="assets">
+  <table name="goalkeepergloves" shortname="ezDT" maxupdate="-1" maxinsert="31" maxdelete="31" savegroups="assets">
     <fields>
       <field name="gloveid" shortname="BmGy" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" key="True" />
       <field name="isembargoed" shortname="nokh" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
@@ -8355,7 +8355,7 @@
       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="position7" shortname="fvcy" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
       <field name="pos3role" shortname="kFjd" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="60000" rangelow="0" update="True" />
-      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" />
+      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" update="True" />
       <field name="midfielders" shortname="yYmh" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offset8y" shortname="MhRc" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
       <field name="offensiverating" shortname="QraJ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
@@ -8407,7 +8407,7 @@
       <field name="pos7role" shortname="VhxR" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="60000" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="leagueteamlinks" shortname="qdZF" maxupdate="-1" maxinsert="1196" maxdelete="1196" savegroups="cmsquads,squads">
+  <table name="leagueteamlinks" shortname="qdZF" maxupdate="-1" maxinsert="1193" maxdelete="1193" savegroups="cmsquads,squads">
     <fields>
       <field name="artificialkey" shortname="JMld" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="4000" rangelow="0" key="True" />
       <field name="homegf" shortname="gazb" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="200" rangelow="0" update="True" />
@@ -9195,7 +9195,7 @@
       <field name="commentaryid" shortname="RkEp" type="DBOFIELDTYPE_INTEGER" depth="16" null="False" rangehigh="965000" rangelow="900000" />
     </fields>
   </table>
-  <table name="player_grudgelove" shortname="DFeB" maxupdate="-1" maxinsert="788" maxdelete="788" savegroups="cmsquads,squads">
+  <table name="player_grudgelove" shortname="DFeB" maxupdate="-1" maxinsert="789" maxdelete="789" savegroups="cmsquads,squads">
     <fields>
       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="500000" rangelow="0" key="True" fkparenttable="players" />
       <field name="level_of_emotion" shortname="jqVD" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="7" rangelow="0" />
@@ -9695,7 +9695,7 @@
       <field name="att" shortname="NHAw" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="50" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="default_mentalities" shortname="ONtg" maxupdate="-1" maxinsert="955" maxdelete="955" savegroups="squads">
+  <table name="default_mentalities" shortname="ONtg" maxupdate="-1" maxinsert="940" maxdelete="940" savegroups="squads">
     <fields>
       <field name="mentalityid" shortname="AwZu" type="DBOFIELDTYPE_INTEGER" depth="13" null="False" rangehigh="8000" rangelow="0" key="True" />
       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
@@ -10082,7 +10082,7 @@
       <field name="offset4x" shortname="TzCW" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
     </fields>
   </table>
-  <table name="fixtures" shortname="Vmkr" maxupdate="-1" maxinsert="1141" maxdelete="1141" savegroups="cmsquads,squads,fixtures">
+  <table name="fixtures" shortname="Vmkr" maxupdate="-1" maxinsert="1200" maxdelete="1200" savegroups="cmsquads,squads,fixtures">
     <fields>
       <field name="fixtureid" shortname="pdNg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" key="True" />
       <field name="homeleagueid" shortname="qKND" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="4000" rangelow="1" />

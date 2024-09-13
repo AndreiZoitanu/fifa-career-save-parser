@@ -1,6 +1,6 @@
 {
   "name": "fifa-career-save-parser",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Parse PC career mode save files from FIFA 17 - 21",
   "main": "index.js",
   "scripts": {
